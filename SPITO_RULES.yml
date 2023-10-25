@@ -1,3 +1,5 @@
-# File with information about this repo for spito rules
+repo_url: https://github.com/Nasz-Elektryk/spito-ruleset
+git_prefix: github.com
 
-dbus: ./rules/dbus.lua
+rules:
+    dbus: ./rules/dbus.lua
