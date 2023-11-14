@@ -9,7 +9,7 @@ function main()
         return false
     end
 
-    daemon, _ = GetDaemon("dbus")
+    daemon, _ = api.sys.GetDaemon("dbus")
     
     if daemon.IsActive and daemon.IsEnabled then
         return true
