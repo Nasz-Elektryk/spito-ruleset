@@ -3,8 +3,11 @@
 -- (opposition of this file)
 
 function main()
-    p = Package()
-    p.Get(p, "dbus")
+    p, err = api.pkg.Get("dbus")
+    if err ~= nil then
+        return false
+    end
+
     if p.Name == "" then
         return false
     end
