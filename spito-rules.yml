@@ -3,3 +3,4 @@ git_prefix: github.com
 
 rules:
     dbus: ./rules/dbus.lua
+    nerd-fonts: ./rules/nerd-fonts.lua
