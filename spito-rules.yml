@@ -1,5 +1,6 @@
 repo_url: https://github.com/avorty/spito-ruleset
 git_prefix: github.com
+identifier: avorty/spito-ruleset
 
 rules:
     dbus: ./rules/dbus.lua
