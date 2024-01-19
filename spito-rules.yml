@@ -5,3 +5,4 @@ identifier: avorty/spito-ruleset
 rules:
     dbus: ./rules/dbus.lua
     nerd-fonts: ./rules/nerd-fonts.lua
+    info: ./rules/info.lua
