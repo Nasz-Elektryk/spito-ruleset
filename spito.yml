@@ -3,6 +3,10 @@ git_prefix: github.com
 identifier: avorty/spito-ruleset
 
 rules:
-    dbus: ./rules/dbus.lua
-    nerd-fonts: ./rules/nerd-fonts.lua
-    info: ./rules/info.lua
+    dbus: 
+        path: ./rules/dbus.lua
+    nerd-fonts: 
+        path: ./rules/nerd-fonts.lua
+    info: 
+        path: ./rules/info.lua
+dependencies: []
