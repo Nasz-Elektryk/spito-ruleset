@@ -9,4 +9,3 @@ rules:
         path: ./rules/nerd-fonts.lua
     info: 
         path: ./rules/info.lua
-dependencies: []
