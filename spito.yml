@@ -14,8 +14,8 @@ rules:
         path: rules/nerd-fonts.lua
         description: ""
         unsafe: false
-    samba:
-        path: rules/samba.lua
+    extrepo:
+        path: rules/extrepo.lua
         description: ""
         unsafe: false
 description: ""
