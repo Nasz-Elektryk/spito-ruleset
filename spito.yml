@@ -1,11 +1,23 @@
 repo_url: https://github.com/avorty/spito-ruleset
 git_prefix: github.com
 identifier: avorty/spito-ruleset
-
 rules:
-    dbus: 
-        path: ./rules/dbus.lua
-    nerd-fonts: 
-        path: ./rules/nerd-fonts.lua
-    info: 
-        path: ./rules/info.lua
+    dbus:
+        path: rules/dbus.lua
+        description: ""
+        unsafe: false
+    info:
+        path: rules/info.lua
+        description: ""
+        unsafe: false
+    nerd-fonts:
+        path: rules/nerd-fonts.lua
+        description: ""
+        unsafe: false
+    samba:
+        path: rules/samba.lua
+        description: ""
+        unsafe: false
+description: ""
+branch: ""
+dependencies: {}
