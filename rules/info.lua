@@ -1,8 +1,8 @@
 function main()
-    api.info.Log("Example log info")
-    api.info.Debug("Example debug info")
-    api.info.Warn("Example warning info")
-    api.info.Important("Example important info")
-    api.info.Error("Example error info")
-    return false
+    api.info.log("Example log info")
+    api.info.debug("Example debug info")
+    api.info.warn("Example warning info")
+    api.info.important("Example important info")
+    api.info.error("Example error info")
+    return true
 end

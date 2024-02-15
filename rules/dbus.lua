@@ -3,22 +3,22 @@
 -- (opposition of this file)
 
 function main()
-    p, err = api.pkg.Get("dbus")
+    p, err = api.pkg.get("dbus")
     if err ~= nil then
-        api.info.Error("Error occured during obtaining package info!")
+        api.info.error("Error occured during obtaining package info!")
         return false
     end
 
     if p.Name == "" then
-        api.info.Error("Package doesn't have name!")
+        api.info.error("Package doesn't have name!")
         return false
     end
 
-    daemon, _ = api.sys.GetDaemon("dbus")
+    daemon, _ = api.sys.getDaemon("dbus")
     
     if daemon.IsActive and daemon.IsEnabled then
         return true
     end
-    api.info.Error("Daemon isn't active or enabled!")
+    api.info.error("Daemon isn't active or enabled!")
     return false
 end
