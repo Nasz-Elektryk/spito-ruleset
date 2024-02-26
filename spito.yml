@@ -19,7 +19,7 @@ rules:
         description: ""
         unsafe: false
         environment: false
-        sudo: false
+        sudo: true
     info:
         path: rules/info.lua
         description: ""
