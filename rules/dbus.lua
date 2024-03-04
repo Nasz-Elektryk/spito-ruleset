@@ -14,7 +14,7 @@ function main()
         return false
     end
 
-    daemon, _ = api.sys.getDaemon("dbus")
+    daemon, _ = api.daemon.get("dbus")
     
     if daemon.IsActive and daemon.IsEnabled then
         return true
