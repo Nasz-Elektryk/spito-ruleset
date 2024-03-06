@@ -33,5 +33,4 @@ rules:
         environment: false
         sudo: false
 description: ""
-branch: ""
-dependencies: {}
+branch: "main"
