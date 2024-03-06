@@ -14,6 +14,12 @@ rules:
         unsafe: false
         environment: false
         sudo: false
+    gnome_exists:
+        path: rules/gnome_exists.lua
+        description: ""
+        unsafe: false
+        environment: false
+        sudo: false
     hyprland:
         path: rules/hyprland.lua
         description: ""
@@ -33,4 +39,5 @@ rules:
         environment: false
         sudo: false
 description: ""
-branch: "main"
+branch: main
+dependencies: {}
