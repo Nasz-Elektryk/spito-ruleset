@@ -23,7 +23,7 @@ rules:
     hyprland:
         path: rules/hyprland.lua
         description: ""
-        unsafe: false
+        unsafe: true
         environment: false
         sudo: true
     info:
