@@ -6,18 +6,32 @@ rules:
         path: rules/dbus.lua
         description: ""
         unsafe: false
-    info:
-        path: rules/info.lua
-        description: ""
-        unsafe: false
-    nerd-fonts:
-        path: rules/nerd-fonts.lua
-        description: ""
-        unsafe: false
+        environment: false
+        sudo: false
     extrepo:
         path: rules/extrepo.lua
         description: ""
         unsafe: false
+        environment: false
+        sudo: false
+    gnome:
+        path: rules/gnome.lua
+        description: ""
+        unsafe: false
+        environment: false
+        sudo: false
+    info:
+        path: rules/info.lua
+        description: ""
+        unsafe: false
+        environment: false
+        sudo: false
+    nerd-fonts:
+        path: rules/nerd-fonts.lua
+        description: ""
+        unsafe: false
+        environment: false
+        sudo: false
 description: ""
-branch: ""
+branch: main
 dependencies: {}

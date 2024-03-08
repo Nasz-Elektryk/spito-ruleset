@@ -21,20 +21,18 @@ function putDownDMs(dmToSkip)
             goto continue
         end
 
-        err = api.daemon.stopDaemon(dm)
+        err = api.daemon.stop(dm)
         if err then
-            api.info.error(err)
-            return false
+            return err
         end
 
-        err = api.daemon.disableDaemon(dm)
+        err = api.daemon.disable(dm)
         if err then
-            api.info.error(err)
-            return false
+            return err
         end
 
         ::continue::
     end
 
-    return true
+    return nil
 end
