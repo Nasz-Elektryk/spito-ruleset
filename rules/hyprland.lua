@@ -57,6 +57,11 @@ function main()
 			return false
 		end
 	end
-	err = api.sh.exec("Hyprland")
-	return err == nil
+
+	err = api.sh.exec("/usr/bin/Hyprland")
+	if err ~= nil then
+		api.info.error(err)
+		return false
+	end
+	return true
 end
