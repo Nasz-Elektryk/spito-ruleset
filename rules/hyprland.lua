@@ -11,7 +11,7 @@ fi
 function main()
 
 	local packages = {"hyprland", "swww", "archlinux-wallpaper", "waybar", 
-	"otf-font-awesome", "kitty", "bash"}
+	"otf-font-awesome", "kitty", "bash", "psmisc", "kbd"}
 	local didPackageInstallationSucceed = true
 
 	for i, packageName in pairs(packages) do
@@ -58,7 +58,16 @@ function main()
 		end
 	end
 
-	err = api.sh.exec("/usr/bin/Hyprland")
+	_, err = api.fs.apply()
+	if err ~= nil then
+		api.info.error(err)
+		return false
+	end
+
+	api.sh.command("killall Xorg")
+
+	local command = string.format("/usr/bin/openvt -fc 1 -- /usr/bin/sudo -u %s /usr/bin/Hyprland", api.sys.getEnv("SUDO_USER"))
+	err = api.sh.exec(command)
 	if err ~= nil then
 		api.info.error(err)
 		return false
